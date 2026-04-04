@@ -37,3 +37,18 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+out/
+
+# Maven
+target/
+
+# macOS
+.DS_Store
+
+# Docker local dependencies
+docker-images-dependency/
