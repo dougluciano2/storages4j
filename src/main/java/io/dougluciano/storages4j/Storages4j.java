@@ -3,6 +3,7 @@ package io.dougluciano.storages4j;
 
 import io.dougluciano.storages4j.configuration.StorageConfiguration;
 import io.dougluciano.storages4j.core.StorageClient;
+import io.dougluciano.storages4j.exceptions.StorageException;
 import io.dougluciano.storages4j.infrastructure.MinioStorageClient;
 
 public final class Storages4j {
@@ -17,8 +18,8 @@ public final class Storages4j {
 
         return switch (configuration.provider()){
             case MINIO -> new MinioStorageClient(configuration);
-            case S3 -> throw new UnsupportedOperationException("S3 Client not implemented yet");
-            case LOCAL -> throw new UnsupportedOperationException("Local Storage not implemented yet");
+            case S3 -> throw new StorageException("S3 Client not implemented yet");
+            case LOCAL -> throw new StorageException("Local Storage not implemented yet");
         };
     }
 }

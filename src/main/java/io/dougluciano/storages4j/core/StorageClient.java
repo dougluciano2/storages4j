@@ -12,4 +12,10 @@ public interface StorageClient {
 
     boolean exists(String objectKey);
 
+    boolean bucketExists();
+
+    void createBucketIfNotExists();
+
+    ObjectMetadata stat(String objectKey);
+
 }
