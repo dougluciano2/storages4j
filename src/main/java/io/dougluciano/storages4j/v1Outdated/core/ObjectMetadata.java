@@ -1,4 +1,4 @@
-package io.dougluciano.storages4j.core;
+package io.dougluciano.storages4j.v1Outdated.core;
 
 /**
  * Representa os metadados técnicos de um objeto armazenado.

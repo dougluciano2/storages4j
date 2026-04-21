@@ -1,10 +1,10 @@
-package io.dougluciano.storages4j;
+package io.dougluciano.storages4j.v1Outdated;
 
 
-import io.dougluciano.storages4j.configuration.StorageConfiguration;
-import io.dougluciano.storages4j.core.StorageClient;
-import io.dougluciano.storages4j.exceptions.StorageException;
-import io.dougluciano.storages4j.infrastructure.MinioStorageClient;
+import io.dougluciano.storages4j.v1Outdated.configuration.StorageConfiguration;
+import io.dougluciano.storages4j.v1Outdated.core.StorageClient;
+import io.dougluciano.storages4j.v1Outdated.exceptions.StorageException;
+import io.dougluciano.storages4j.v1Outdated.infrastructure.MinioStorageClient;
 
 /**
  * Classe fábrica responsável por instanciar o {@link StorageClient}

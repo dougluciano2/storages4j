@@ -1,4 +1,4 @@
-package io.dougluciano.storages4j.exceptions;
+package io.dougluciano.storages4j.v1Outdated.exceptions;
 
 /**
  * Exceção base da biblioteca para erros relacionados a operações de storage.

@@ -1,4 +1,4 @@
-package io.dougluciano.storages4j.metadata;
+package io.dougluciano.storages4j.v1Outdated.metadata;
 
 import java.util.Map;
 import java.util.UUID;

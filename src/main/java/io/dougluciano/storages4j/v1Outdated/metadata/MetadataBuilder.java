@@ -1,7 +1,7 @@
-package io.dougluciano.storages4j.metadata;
+package io.dougluciano.storages4j.v1Outdated.metadata;
 
-import io.dougluciano.storages4j.core.ObjectMetadata;
-import io.dougluciano.storages4j.core.StorageProvider;
+import io.dougluciano.storages4j.v1Outdated.core.ObjectMetadata;
+import io.dougluciano.storages4j.v1Outdated.core.StorageProvider;
 
 import java.time.Instant;
 import java.util.Map;

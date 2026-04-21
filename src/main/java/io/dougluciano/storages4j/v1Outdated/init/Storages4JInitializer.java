@@ -1,7 +1,7 @@
-package io.dougluciano.storages4j.init;
+package io.dougluciano.storages4j.v1Outdated.init;
 
-import io.dougluciano.storages4j.configuration.StorageConfiguration;
-import io.dougluciano.storages4j.core.StorageProvider;
+import io.dougluciano.storages4j.v1Outdated.configuration.StorageConfiguration;
+import io.dougluciano.storages4j.v1Outdated.core.StorageProvider;
 
 import java.io.InputStream;
 import java.util.Properties;

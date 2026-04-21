@@ -1,6 +1,6 @@
-package io.dougluciano.storages4j.configuration;
+package io.dougluciano.storages4j.v1Outdated.configuration;
 
-import io.dougluciano.storages4j.core.StorageProvider;
+import io.dougluciano.storages4j.v1Outdated.core.StorageProvider;
 
 /**
  * Representa a configuração necessária para inicializar um client de storage.

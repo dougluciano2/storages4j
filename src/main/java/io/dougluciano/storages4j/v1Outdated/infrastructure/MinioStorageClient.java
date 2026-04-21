@@ -1,11 +1,11 @@
-package io.dougluciano.storages4j.infrastructure;
+package io.dougluciano.storages4j.v1Outdated.infrastructure;
 
-import io.dougluciano.storages4j.configuration.StorageConfiguration;
-import io.dougluciano.storages4j.core.ObjectMetadata;
-import io.dougluciano.storages4j.core.StorageClient;
-import io.dougluciano.storages4j.exceptions.StorageException;
-import io.dougluciano.storages4j.metadata.MetadataBuilder;
-import io.dougluciano.storages4j.metadata.StorageObjectMetadata;
+import io.dougluciano.storages4j.v1Outdated.configuration.StorageConfiguration;
+import io.dougluciano.storages4j.v1Outdated.core.ObjectMetadata;
+import io.dougluciano.storages4j.v1Outdated.core.StorageClient;
+import io.dougluciano.storages4j.v1Outdated.exceptions.StorageException;
+import io.dougluciano.storages4j.v1Outdated.metadata.MetadataBuilder;
+import io.dougluciano.storages4j.v1Outdated.metadata.StorageObjectMetadata;
 import io.minio.*;
 
 import java.io.ByteArrayInputStream;
@@ -92,6 +92,7 @@ public class MinioStorageClient implements StorageClient {
                             .contentType(contentType)
                             .build()
             );
+            uploadMetadata(objectKey, extractFileName(objectKey), Map.of());
 
         } catch (Exception e){
             throw new StorageException("Error uploading object: " + objectKey, e);
@@ -138,9 +139,10 @@ public class MinioStorageClient implements StorageClient {
                             .bucket(configuration.bucket())
                             .object(metadataKey)
                             .stream(new ByteArrayInputStream(metadataBytes), metadataBytes.length, - 1)
-                            .contentType("aplication/json")
+                            .contentType("application/json")
                             .build()
             );
+
 
         } catch (Exception e){
             throw new StorageException("Error uploading metadata for object: " + objectKey, e);
